@@ -1,0 +1,154 @@
+/* ================================================================
+   RESPONSIVE STYLES (Targeting Mobile & Tablets)
+   ================================================================ */
+
+@media (max-width: 768px) {
+    
+    /* --- Navigation & Header --- */
+    .main-menu, 
+    .button-area, 
+    .btn-subscribe {
+        display: none; 
+    }
+
+    .mobile-menu-icon, 
+    .mobile-dropdown {
+        display: block; 
+    }
+
+    .hamburger-icon img {
+        width: 32px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #1a0a2d;
+        list-style: none;
+        padding: 15px 0;
+        min-width: 160px;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 999;
+    }
+
+    .mobile-dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 25px;
+        display: block;
+        font-size: 14px;
+        transition: background 0.3s;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    /* --- Hero Section --- */
+
+    .hero-section{
+            height: 80vh;
+    }
+    .hero-content h1 { 
+        font-size: 40px; 
+    }
+    .hero-circle { 
+        width: 180px; 
+        height: 180px; 
+        margin-top: 50px; 
+    }
+    .mic-icon { 
+        width: 70px; 
+    }
+
+section.podcast-section {
+    padding: 50px 0px 60px 0px;
+  
+    
+}
+
+.features-section{
+    padding: 50px 0px 50px 0px;
+}
+    /* --- Stats Section --- */
+   .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 40px 20px;
+        text-align: center;
+    }
+
+    .stat-item h2 {
+        font-size: 2.5rem; 
+    }
+
+    .stat-item h2 span {
+        font-size: 1.8rem;
+    }
+
+    .stat-item p {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+    .stat-item {
+        margin-bottom: 20px;
+    }
+
+    /* --- Features Grid Layout --- */
+    .grid-layout {
+        grid-template-areas: 
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5";
+        grid-template-columns: 1fr;
+    }
+
+    /* --- Host Section --- */
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+
+    /* --- Footer Section (General Mobile) --- */
+    .footer-socials {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .footer-logo {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    .host-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
